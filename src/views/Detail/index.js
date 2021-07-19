@@ -188,8 +188,8 @@ export default function Detail({ match }) {
                                                 <Card className={classes.cardStyle} >
                                                     <CardBody>
                                                         <h5>Abilities
-                                                            {_.map(pokemon.abilities, (ability) => (
-                                                                <Badge className={classes.badgeStyle} key={ability.key} >
+                                                            {_.map(pokemon.abilities, (ability, index) => (
+                                                                <Badge key={ability.index} className={classes.badgeStyle} key={ability.key} >
                                                                     {ability.ability.name}
                                                                 </Badge>
                                                             ))}
