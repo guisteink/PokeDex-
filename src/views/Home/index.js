@@ -58,7 +58,7 @@ export default function Home() {
       setFilter('all')
       window.location.reload();
     }
-    setFilter(inputText)
+    setFilter(_.toLower(inputText))
   }
 
   const handleChange = (event) => {
