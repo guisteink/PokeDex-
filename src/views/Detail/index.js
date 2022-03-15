@@ -98,7 +98,7 @@ export default function Detail({ match }) {
                             <Row >
                                 <Col>
                                     <Media>
-                                        <Media object src={pokemon.image} ></Media>
+                                        <Media style={{maxWidth: '40vw'}} object src={pokemon.image} ></Media>
                                     </Media>
                                 </Col>
                                 <Col>
